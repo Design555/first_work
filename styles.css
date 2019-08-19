@@ -6,19 +6,88 @@
     padding: 0;
 }
 
-html, body {
-    background: #ccc;
+body {
     font-family: 'Roboto', serif;
+    background: #ccc;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    overflow: auto;
+}
+
+#navbar {
+    background: #fff;
+    color: #3E322E;
+    height: 70px;
+    padding: 0 20px 0 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo-resize {
+    float: left;
+    width: 42px;
+    padding-top: 14px;
+}
+
+.logo .logo-text {
+    float: left;
+    padding: 20px 0 0 5px;
+}
+
+#navbar ul{
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li {
+    display: inline-block;
+    padding: 24px 30px 0 0;
+}
+
+#navbar ul li a {
+    display: block;
+}
+
+#navbar ul li:last-child {
+    padding-right: 0;
+}
+
+#navbar ul li:last-child a {
+    background: coral;
+    color: #fff;
+    width: 60px;
+    height: 42px;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    height: 100vh;
 }
 
 .wrapper .form-wrap  {
-    margin: 80px auto 0 auto;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%); */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     list-style: none;
     max-width: 600px;
     height: 300px;
     background: lightcyan;
     color: #333;
-    padding: 25px 20px 20px 20px;
+    padding: 25px 20px 31px;
     border: 1px rgba(0,0,0, 0.2) solid;
 }
 
@@ -34,8 +103,31 @@ html, body {
     width: 100%;
     padding: 12px 0px 12px 10px;
     border: 1px #dbdbdb solid;
-    font-family: 'Roboto', serif;
     font-size: 14px;
+}
+
+.input-1 {
+    position: relative;
+}
+
+.fa-user {
+    position: absolute;
+    top: 55px;
+    right: 16px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.input-2 {
+    position: relative;
+}
+
+.fa-envelope{
+    position: absolute;
+    top: 57px;
+    right: 16px;
+    font-size: 14px;
+    color: #ccc;
 }
 
 .wrapper .form-wrap input:hover {
@@ -54,17 +146,19 @@ html, body {
 .wrapper .form-wrap button {
     display: block;
     font-family: 'Roboto', serif;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     width: 100%;
-    height: 41px;
-    /* padding: 12px; */
+    /* line-height: 18px; */
+    /* height: 43px; */
+    padding: 12px;
     color: #fff;
     background: coral;
     margin-top: 24px;
     border: none;
 }
+
 
 .wrapper .form-wrap button:hover {
     transition: 0.9s ease;
