@@ -19,7 +19,7 @@ body {
 
 #navbar {
     background: #fff;
-    color: #3E322E;
+    color: #3e322e;
     height: 70px;
     padding: 0 20px 0 20px;
 }
@@ -40,29 +40,27 @@ body {
     padding: 20px 0 0 5px;
 }
 
-#navbar ul{
+#navbar ul {
     float: right;
     list-style: none;
+    line-height: 70px;
 }
 
 #navbar ul li {
     display: inline-block;
-    padding: 24px 30px 0 0;
-}
-
-#navbar ul li a {
-    display: block;
-}
-
-#navbar ul li:last-child {
-    padding-right: 0;
+    padding-left: 30px;
+    text-align: center;
 }
 
 #navbar ul li:last-child a {
     background: coral;
     color: #fff;
-    width: 60px;
-    height: 42px;
+    padding: 10px 15px;
+}
+
+#navbar ul li:last-child a:hover {
+    transition: 0.9s ease;
+    background: rgb(221, 89, 41);
 }
 
 .wrapper {
@@ -71,7 +69,7 @@ body {
     height: 100vh;
 }
 
-.wrapper .form-wrap  {
+.wrapper .form-wrap {
     position: absolute;
     /* top: 50%;
     left: 50%;
@@ -88,7 +86,7 @@ body {
     background: lightcyan;
     color: #333;
     padding: 25px 20px 31px;
-    border: 1px rgba(0,0,0, 0.2) solid;
+    border: 1px rgba(0, 0, 0, 0.2) solid;
 }
 
 .wrapper .form-wrap label {
@@ -122,7 +120,7 @@ body {
     position: relative;
 }
 
-.fa-envelope{
+.fa-envelope {
     position: absolute;
     top: 57px;
     right: 16px;
@@ -133,15 +131,15 @@ body {
 .wrapper .form-wrap input:hover {
     transition: 0.5s ease;
     border: 1px #c4c4c4 solid;
-  }
+}
 
-  input:focus {
-    display: block; 
+input:focus {
+    display: block;
     background: rgb(239, 248, 248);
     transition: 0.5s ease;
     outline: none;
     font-family: 'Roboto', serif;
-  }
+}
 
 .wrapper .form-wrap button {
     display: block;
@@ -159,8 +157,7 @@ body {
     border: none;
 }
 
-
 .wrapper .form-wrap button:hover {
     transition: 0.9s ease;
     background: rgb(221, 89, 41);
-} 
+}
