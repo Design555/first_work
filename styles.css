@@ -17,18 +17,7 @@ body {
     overflow: auto;
 }
 
-#navbar {
-    background: #fff;
-    color: #3e322e;
-    height: 70px;
-    padding: 0 20px 0 20px;
-}
-
-#navbar a {
-    text-decoration: none;
-    color: #333;
-}
-
+/* Header */
 .logo-resize {
     float: left;
     width: 42px;
@@ -40,6 +29,23 @@ body {
     padding: 20px 0 0 5px;
 }
 
+#navbar {
+    background: #fff;
+    color: #3e322e;
+    /* height: 70px; */
+    padding: 0 20px 0 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+#navbar a:hover {
+    transition: 0.5s ease-in-out;
+    color: coral;
+}
+
 #navbar ul {
     float: right;
     list-style: none;
@@ -48,21 +54,23 @@ body {
 
 #navbar ul li {
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 26px;
     text-align: center;
 }
 
 #navbar ul li:last-child a {
-    background: coral;
-    color: #fff;
-    padding: 10px 15px;
+    background: #e2e2e2;
+    color: #333;
+    padding: 10px 17px;
 }
 
 #navbar ul li:last-child a:hover {
-    transition: 0.9s ease;
-    background: rgb(221, 89, 41);
+    transition: 0.3s ease;
+    background: coral;
+    color: #fff;
 }
 
+/* Input Form */
 .wrapper {
     width: 100%;
     position: relative;
@@ -160,4 +168,66 @@ input:focus {
 .wrapper .form-wrap button:hover {
     transition: 0.9s ease;
     background: rgb(221, 89, 41);
+}
+
+/* footer Sections*/
+.section-footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px 35px 20px;
+}
+
+.section-footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.section-footer h2 {
+    font-size: 25px;
+    margin-bottom: 14px;
+}
+
+.section-footer p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.section-footer h3 {
+    margin-bottom: 16px;
+}
+
+.section-footer a {
+    line-height: 33px;
+    color: #ccc;
+    text-decoration: none;
+}
+.section-footer a:hover {
+    transition: 0.5s ease;
+    color: #fff;
+}
+
+.section-footer li {
+    list-style: none;
+}
+
+.section-footer i {
+    color: #999;
+    margin-right: 18px;
+}
+.section-footer i:hover {
+    transition: 0.5s ease;
+    color: #fff;
+}
+
+/* Footer */
+.copyright p {
+    color: #888;
+    font-size: 13px;
+    font-weight: 600;
+    background: #111;
+    line-height: 36px;
+    text-align: center;
 }
