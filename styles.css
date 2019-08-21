@@ -14,7 +14,6 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1170px;
-    overflow: auto;
 }
 
 /* Header */
@@ -25,14 +24,27 @@ body {
 }
 
 .logo .logo-text {
-    float: left;
-    padding: 20px 0 0 5px;
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 16px 0px 0 47px;
+    /* top: 16px;
+    left: 20px; */
+}
+
+.logo .logo-sub {
+    position: absolute;
+    font-size: 14px;
+    padding: 38px 0px 0 49px;
+    /* top: 39px;
+    left: 20px; */
 }
 
 #navbar {
     background: #fff;
     color: #3e322e;
-    /* height: 70px; */
+    height: 70px;
     padding: 0 20px 0 20px;
 }
 
